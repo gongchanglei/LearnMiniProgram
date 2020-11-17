@@ -1,0 +1,15 @@
+<!--pages/button/button.wxml-->
+<!-- 1 button属性：size设置按钮大小 -->
+<button size="mini">按钮</button>
+
+<!-- 2 type属性按钮样式(primary default warn) -->
+<button type="primary" size="mini">按钮</button>
+<button type="default" size="mini">按钮</button>
+<button type="warn" size="mini">按钮</button>
+
+<!-- 3 plain属性 镂空效果 -->
+<button plain size="mini">按钮</button>
+
+<!-- 4 disable属性 不可用 -->
+<button disabled size="mini">按钮</button>
+

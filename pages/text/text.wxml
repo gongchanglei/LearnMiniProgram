@@ -1,0 +1,17 @@
+<!--pages/text/text.wxml-->
+<!-- text组件 -->
+
+<!-- 1 基本使用：行内元素，显示在一行 -->
+<text>hello world\n</text>
+<text>小程序\n</text>
+
+<!-- 2 属性 selectable(已废弃) user-select :true -->
+<!-- 默认情况下text中文本长按不能选中，设置selectable属性为true即可选中 -->
+<text user-select="true">hahaha\n</text>
+
+<!-- 3 属性 space：设置文本空格大小 -->
+<text space="ensp">hello world\n</text>
+
+<!-- 4 decode属性，解码文本 -->
+<text decode>5 &gt; 3</text>
+
