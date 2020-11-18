@@ -1,0 +1,25 @@
+/* pages/scroll/scroll.wxss */
+.container1{
+  background: purple;
+  white-space: nowrap;  /* 设置不换行*/
+
+}
+.item1{
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin: 10px;
+  display: inline-block; /* view标签独占一行，inline-block设置在一行中显示*/
+}
+
+.container2{
+  background: orange;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.item2{
+  background: green;
+  height: 50px;
+  margin: 10px;
+}

@@ -1,0 +1,16 @@
+<!--pages/scroll/scroll.wxml-->
+
+<!-- scroll-x属性：水平滚动 -->
+<scroll-view class='container1' scroll-x>
+  <view wx:for="{{10}}" class='item1'>{{item}}</view>
+</scroll-view>
+
+<!-- scroll-y属性：局部垂直滚动 -->
+<scroll-view class='container2' scroll-y>
+  <view wx:for="helloworld" class='item2'>{{item}}</view>
+</scroll-view>
+
+<!-- 事件属性bindscroll -->
+<scroll-view class='container2' scroll-y bindscroll="handleScroll">
+  <view wx:for="helloworld" class='item2'>{{item}}</view>
+</scroll-view>
