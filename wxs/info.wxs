@@ -1,0 +1,14 @@
+ // js代码
+ var message = "hello world";
+ var name = 'gcl';
+ var sum = function(num1,num2){
+   return num1+num2;
+ }
+
+ // 所定义的变量都在模块中使用，想在外部使用需要模块化导出
+module.exports = {
+ message:message,
+ name:name,
+ sum:sum,
+
+}

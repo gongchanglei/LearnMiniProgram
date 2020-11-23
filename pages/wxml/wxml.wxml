@@ -1,0 +1,52 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- 1 Mustache语法 -->
+<view>{{firstname}} {{lastname}}</view>
+<view>{{firstname+" "+lastname}}</view>
+<!-- 三目运算符 -->
+<view>{{age>=18 ? "成年人":"未成年人"}}</view>
+
+<view>{{nowTime}}</view>
+
+
+<button size="mini" bindtap="handleSwitch">切换颜色</button>
+<view class="{{isActive ? 'active':''}}">哈哈哈</view>
+
+<!-- 条件判断 wx:if 真显示文本，假隐藏，相当于hidden属性-->
+<button size="mini" bindtap="handleShow">切换显示</button>
+<view wx:if="{{isShow}}">呵呵呵</view>
+
+<!-- hidden属性 -->
+<view hidden>嘿嘿嘿</view>
+
+<!-- hidden：将一个组件隐藏起来时，该组件依然存在(只是将组件的display属性设为none) -->
+<!-- wx:if   将一个组件隐藏起来时，该组件根本不存在（没有创建） -->
+
+<!-- wx:for 遍历数组，字符串，数字 -->
+<view wx:for="{{['abc','asd','aaa',123]}}">{{item}} {{index}}</view>
+
+<!-- block标签用于包裹一组组件 可用view组件替换，但是性能上Block更好-->
+<!-- <block wx:for="{{3}}">
+  <button>按钮</button>
+  <view>哈哈哈</view>
+  <text>黑黑黑</text>
+</block> -->
+
+<!-- wx:for 给item，index其别名 -->
+<view wx:for="{{movies}}" wx:for-item="movie" wx:for-index="i">{{movie}} {{i}}</view>
+
+<!-- 打印二维数组 -->
+<!-- <block wx:for="{{nums}}" wx:for-item='outNums'>
+  <block wx:for="{{outNums}}">
+    <view>{{item}}</view>
+  </block>
+</block> -->
+
+<!-- template 模块标签：用于代码块复用 -->
+<!-- 用name属性来标识template,被包裹的代码块不会被渲染，使用时用is -->
+<template name="templateItem">
+  <button>按钮</button>
+  <view>哈哈</view>
+</template>
+
+
+<template is='templateItem'/>

@@ -2,3 +2,8 @@
 .title {
   color: red;
 }
+
+/*id选择器设置样式*/
+#text1{
+  background: orange;
+}

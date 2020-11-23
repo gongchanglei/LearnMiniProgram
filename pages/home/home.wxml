@@ -1,3 +1,4 @@
 <!--pages/home/home.wxml-->
-<text class="title">hello world</text>
-<button size="mini">按钮</button>
+<!-- 共同属性 id 跟class属性类似可设置样式-->
+<text id='text1' class="title">hello world\n</text>
+<button id='button1' size="mini">按钮</button>

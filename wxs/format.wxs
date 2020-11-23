@@ -1,0 +1,10 @@
+function priceFormat(price , num){
+  var num = num || 2;
+  return price.toFixed(num);
+}
+
+// 导出模块化
+module.exports = {
+  priceFormat:priceFormat,
+
+}
