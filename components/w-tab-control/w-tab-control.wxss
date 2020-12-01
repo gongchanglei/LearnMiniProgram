@@ -1,0 +1,21 @@
+/* components/w-tab-control/w-tab-control.wxss */
+.tab_control{
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+  /* background: orange; */
+}
+
+.tab_item{
+  flex: 1;  /*文本平分*/
+  text-align: center;  /*文本居中*/
+ }
+
+ .active{
+   color: red;
+  
+ }
+ .active text{
+   padding: 20rpx 18rpx;
+  border-bottom: 6rpx solid red;
+ }

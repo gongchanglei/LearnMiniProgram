@@ -1,0 +1,6 @@
+<!--components/my-mslot/my-mslot.wxml-->
+<view>插槽头</view>
+<view class="slot1"><slot name="slot1"/></view>
+<view class="slot2"><slot name="slot2"/></view>
+<view class="slot3"><slot name="slot3"/></view>
+<view>插槽尾</view>

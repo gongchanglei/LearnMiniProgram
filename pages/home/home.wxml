@@ -1,3 +1,54 @@
 <!--pages/home/home.wxml-->
 <text class="title">hello world</text>
 <button size="mini">按钮</button>
+
+<!-- 使用自定义组件的基本使用 -->
+<!-- <my-cpn></my-cpn>
+<my-cpn/> -->
+
+<!-- 2 自定义组件的样式 -->
+<!-- <my-style></my-style> -->
+
+<!-- 3 向自定义组件转递数据/样式-->
+<my-prop title="哈哈" titleclass='green'></my-prop>
+<my-prop title="嘿嘿" titleclass = 'red'></my-prop>
+<my-prop></my-prop>
+
+<!-- 4 自定义组件事件向页面传递 -->
+<view>当前计数：{{count}}</view>
+<my-event bind:increment="handleIncrement"></my-event>
+
+<!-- 5 练习 -->
+<!-- <w-tab-control text="{{['流行','新款','经典']}}"           bind:itemClick="handleClickItem"/> -->
+
+<!-- 6 修改组件数据 -->
+<button size= 'mini' bind:tap="handleClick">修改组件数据</button>
+<my-sel id='sel-id'/>
+
+<!-- 7 插槽 -->
+<!-- 7.1 单个插槽 -->
+<!-- <my-solt>
+  <button size="mini">插槽按钮</button>
+</my-solt>
+
+<my-solt>
+  <text>hahaha</text>
+</my-solt>
+
+<my-solt>
+  <slider value="60"></slider>
+</my-solt> -->
+
+<!-- 7.2 多个插槽使用 -->
+<!-- 注意：
+    1 每一个插槽起一个name属性
+    2 Compnent对象中加入MultipleSolts:true -->
+<my-mslot>
+  <button size='mini' slot="slot2">插槽按钮</button>
+  <slider slot="slot1"/>
+</my-mslot>
+
+
+
+
+ 

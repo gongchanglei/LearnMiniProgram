@@ -2,6 +2,14 @@
   "pages": [
     "pages/home/home",
     "pages/about/about"
+    
   ],
+
+  "usingComponents": {
+
+  },
+
   "sitemapLocation": "sitemap65.json"
+  
 }
+
